@@ -24,10 +24,10 @@ public class BattleScene extends MainSceneFlame{
 		LY = 375;
 		
 		
-		st1[0] = "‚½‚½‚©‚¤";
-		st1[1] = "‚Ü‚Ù‚¤";
-		st1[2] = "‚Ú‚¤‚¬‚å";
-		st1[3] = "‚É‚°‚é";
+		st1[0] = "ãŸãŸã‹ã†";
+		st1[1] = "ã¾ã»ã†";
+		st1[2] = "ã¼ã†ãã‚‡";
+		st1[3] = "ã«ã’ã‚‹";
 		setSelect(sl,st1);
 		setFloor("!!BATTLE!!");
 		
@@ -51,9 +51,9 @@ public class BattleScene extends MainSceneFlame{
 	public Monster getMonster(){return ms;}
 	
 	
-	public Animation getAni(int point){return ani[point];};
+	public Animation getAni(int point){return ani[point];}
 	
-		//u‚½‚½‚©‚¤vƒ‹[ƒg
+		//ã€ŒãŸãŸã‹ã†ã€ãƒ«ãƒ¼ãƒˆ
 	public void Attack(){
 		
 			Status Mstatus = ms.getStatus();
@@ -93,18 +93,18 @@ public class BattleScene extends MainSceneFlame{
 			System.out.println("Damege is "+Damege+".\n"+ms.getName()+"'s HP is"+ms.getHP());
 
 
-			String log1 = plr.getName()+"‚Ì‚½‚½‚©‚¤I";
+			String log1 = plr.getName()+"ã®ãŸãŸã‹ã†ï¼";
 			
-			String log2 = ms.getName()+"‚É"+Damege+"‚Ìƒ_ƒ[ƒWII";
+			String log2 = ms.getName()+"ã«"+Damege+"ã®ãƒ€ãƒ¡ãƒ¼ã‚¸ï¼ï¼";
 			
-			//ƒAƒjƒ[ƒVƒ‡ƒ“ì¬
+			//ã‚¢ãƒ‹ãƒ¡ãƒ¼ã‚·ãƒ§ãƒ³ä½œæˆ
 
 			addAni(log1,0);
 			addAni(log2,1);
 //			ms.setADAni(ms.getVB(),this.slX,this.slY);
 //			Animation MSani = ms.getMsAniDMG();
 			
-			//ƒAƒjƒ[ƒVƒ‡ƒ“ƒZƒbƒg
+			//ã‚¢ãƒ‹ãƒ¡ãƒ¼ã‚·ãƒ§ãƒ³ã‚»ãƒƒãƒˆ
 //			ParallelTransition plT = new ParallelTransition(MSani,getAni(0),getAni(1));
 //			SequentialTransition seqT = new SequentialTransition(plT);
 			
@@ -112,7 +112,7 @@ public class BattleScene extends MainSceneFlame{
 		
 	}
 	
-//	ƒ‚ƒ“ƒXƒ^[‚ÌUŒ‚
+//	ãƒ¢ãƒ³ã‚¹ã‚¿ãƒ¼ã®æ”»æ’ƒ
 	public void MonsterAttack(){
 	
 			Status Mstatus = ms.getStatus();
@@ -132,7 +132,7 @@ public class BattleScene extends MainSceneFlame{
 			}
 			
 			if(defNum!=-1){
-			//defNum‚Åƒ`ƒFƒbƒN
+			//defNumã§ãƒã‚§ãƒƒã‚¯
 				System.out.println("defNum ="+defNum);
 				
 				
@@ -141,8 +141,8 @@ public class BattleScene extends MainSceneFlame{
 				System.out.println("Damage is "+Damage);
 				
 				if(Damage<0){Damage = 0;}
-				log1 = ms.getName()+"‚ÌUŒ‚II";
-				log2 = plr.getName()+"‚É"+Damage+"‚Ìƒ_ƒ[ƒWI";
+				log1 = ms.getName()+"ã®æ”»æ’ƒï¼ï¼";
+				log2 = plr.getName()+"ã«"+Damage+"ã®ãƒ€ãƒ¡ãƒ¼ã‚¸ï¼";
 				plr.setHP(plr.getHP()-Damage);
 				setPlr(plr);
 			}
@@ -150,8 +150,8 @@ public class BattleScene extends MainSceneFlame{
 			else{
 			
 				System.out.println("miss");
-				log1 = ms.getName()+"‚ÌUŒ‚II";
-				log2 = "‚µ‚©‚µAŠO‚ê‚Ä‚µ‚Ü‚Á‚½II";
+				log1 = ms.getName()+"ã®æ”»æ’ƒï¼ï¼";
+				log2 = "ã—ã‹ã—ã€å¤–ã‚Œã¦ã—ã¾ã£ãŸï¼ï¼";
 			
 			}
 			
@@ -164,7 +164,7 @@ public class BattleScene extends MainSceneFlame{
 	
 	public boolean checkPLRHP(){
 	
-		
+		return true;
 	
 	}
 }

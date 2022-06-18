@@ -11,9 +11,9 @@ import javafx.animation.*;
 
 public abstract class Monster{
 
-	//ƒXƒe[ƒ^ƒXƒtƒB[ƒ‹ƒh
+	//ã‚¹ãƒ†ãƒ¼ã‚¿ã‚¹ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰
 	
-	//‰æ‘œ‚ÌƒTƒCƒYB‚ ‚Æ‚Åg‚¤
+	//ç”»åƒã®ã‚µã‚¤ã‚ºã€‚ã‚ã¨ã§ä½¿ã†
 	int GSizeW = 64*3;
 	int GSizeH = 64*3;
 	
@@ -21,7 +21,7 @@ public abstract class Monster{
 	String name;
 	Status status;
 
-	//ƒŒƒCƒAƒEƒg
+	//ãƒ¬ã‚¤ã‚¢ã‚¦ãƒˆ
 	VBox vb ;
 	Image image;
 	Label lb ;
@@ -31,7 +31,7 @@ public abstract class Monster{
 	
 	public Monster(String NAME,String str){
 	
-		//ŠeíƒtƒB[ƒ‹ƒh‰Šú‰»
+		//å„ç¨®ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰åˆæœŸåŒ–
 
 		name = NAME;
 		status = new Status();
@@ -44,20 +44,20 @@ public abstract class Monster{
 //		msAniDMG = null;
 
 		
-		//‰æ‘œ“Ç‚İ‚İ
+		//ç”»åƒèª­ã¿è¾¼ã¿
 		try{
 
 			image = new Image(str);
 
 		}
 		catch(ArrayIndexOutOfBoundsException e){
-		  System.out.println("“Ç‚İ‚İ¸”s");
+		  System.out.println("èª­ã¿è¾¼ã¿å¤±æ•—");
 		}
 		
-		//labelƒTƒCƒYİ’è
+		//labelã‚µã‚¤ã‚ºè¨­å®š
 		lb.setFont(new Font(20));
 		
-		//‰æ‘œƒTƒCƒYİ’è
+		//ç”»åƒã‚µã‚¤ã‚ºè¨­å®š
 		ImageView iv = new ImageView();
 		iv.setFitWidth(GSizeW);
 		iv.setFitHeight(GSizeH);
@@ -110,7 +110,7 @@ public abstract class Monster{
 	
 	}*/
 	
-	//ƒXƒe[ƒ^ƒX‚ÌƒQƒbƒ^[
+	//ã‚¹ãƒ†ãƒ¼ã‚¿ã‚¹ã®ã‚²ãƒƒã‚¿ãƒ¼
 	
 	public Status getStatus(){return status;}
 
@@ -124,7 +124,7 @@ class MonsterAnimation extends Transition{
 	private int LayY;
 	boolean AorD;
 
-	//•Ï”‚ÌéŒ¾‚È‚Ç‚ğ‘‚¢‚Ä‚¢‚­
+	//å¤‰æ•°ã®å®£è¨€ãªã©ã‚’æ›¸ã„ã¦ã„ã
 	private int count;
 
 	public MonsterAnimation(VBox vb,int x,int y,boolean effect){
@@ -160,7 +160,7 @@ class MonsterAnimation extends Transition{
 
 	}
 
-	//“®‚©‚·
+	//å‹•ã‹ã™
 	public void DMotion(long time){
 	
 		if(time%9==0){vb.setLayoutX(LayX);}

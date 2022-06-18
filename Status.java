@@ -1,42 +1,42 @@
 public class Status {
 
-	int HP;//‘Ì—Í
-	int MP;//–‚–@
-	int ATK;//•¨—UŒ‚—Í
-	int MATK;//–‚–@UŒ‚—Í
-	int DEF;//•¨—–hŒä—Í
-	int MDEF;//–‚–@–hŒä—Í
-	int ATKATR;//UŒ‚‘®«
+	int HP;//ä½“åŠ›
+	int MP;//é­”æ³•
+	int ATK;//ç‰©ç†æ”»æ’ƒåŠ›
+	int MATK;//é­”æ³•æ”»æ’ƒåŠ›
+	int DEF;//ç‰©ç†é˜²å¾¡åŠ›
+	int MDEF;//é­”æ³•é˜²å¾¡åŠ›
+	int ATKATR;//æ”»æ’ƒå±æ€§
 	
-	/* ATKATR‚É‚Â‚¢‚Ä
+	/* ATKATRã«ã¤ã„ã¦
 	
-		ATKATR‚ÍUŒ‚‚Ì“Á«B
-		0‚Í•¨—‘ÅŒ‚
-		1‚Í•¨—h“Ë
-		2‚Í•¨—aŒ‚
-		3‚Í–‚–@UŒ‚
-		4`9‚Í“ÁêUŒ‚B¸_‚È‚ÇiŒã‚Å×‚©‚­İ’èj
+		ATKATRã¯æ”»æ’ƒã®ç‰¹æ€§ã€‚
+		0ã¯ç‰©ç†æ‰“æ’ƒ
+		1ã¯ç‰©ç†åˆºçª
+		2ã¯ç‰©ç†æ–¬æ’ƒ
+		3ã¯é­”æ³•æ”»æ’ƒ
+		4ï½9ã¯ç‰¹æ®Šæ”»æ’ƒã€‚ç²¾ç¥ãªã©ï¼ˆå¾Œã§ç´°ã‹ãè¨­å®šï¼‰
 	*/
 	
 	
 	
-	int[] weekATK;//ã“_UŒ‚‚ğ”’l‚É•ÏŠ·
-	int[] weekATR;//ã“_‘®«‚ğ”’l‚É•ÏŠ·
-	int[] attackATR;//UŒ‚‘®«‚ğ”’l‚É•ÏŠ·
+	int[] weekATK;//å¼±ç‚¹æ”»æ’ƒã‚’æ•°å€¤ã«å¤‰æ›
+	int[] weekATR;//å¼±ç‚¹å±æ€§ã‚’æ•°å€¤ã«å¤‰æ›
+	int[] attackATR;//æ”»æ’ƒå±æ€§ã‚’æ•°å€¤ã«å¤‰æ›
 	
-	/* ATR‚É‚Â‚¢‚Ä
+	/* ATRã«ã¤ã„ã¦
 		
-		‘®«BˆÈ‰ºİ’è”Ô†
-		10‚ª‰Š
-		11‚ª…
-		12‚ª•—
-		13‚ª“y
-		14‚ª—‹
-		ƒ‚ƒ“ƒXƒ^[‚²‚Æ‚Éã“_AUŒ‚‘®«
-		‚ğİ’è‚µ‚Ä‚¢‚éB
+		å±æ€§ã€‚ä»¥ä¸‹è¨­å®šç•ªå·
+		10ãŒç‚
+		11ãŒæ°´
+		12ãŒé¢¨
+		13ãŒåœŸ
+		14ãŒé›·
+		ãƒ¢ãƒ³ã‚¹ã‚¿ãƒ¼ã”ã¨ã«å¼±ç‚¹ã€æ”»æ’ƒå±æ€§
+		ã‚’è¨­å®šã—ã¦ã„ã‚‹ã€‚
 	*/
 	
-	//•Ö—˜‚Ècount•Ï”
+	//ä¾¿åˆ©ãªcountå¤‰æ•°
 	int countATK = 0;
 	int countATR = 0;
 	int countAtkAtr = 0;
@@ -67,11 +67,11 @@ public class Status {
 	
 	}
 	
-	//WeekATK‚ÌƒZƒbƒ^[
+	//WeekATKã®ã‚»ãƒƒã‚¿ãƒ¼
 	public void setWeekATK(int[] K){
 		for(int i=0;i<K.length;i++){
 			if(countATK>8){
-				System.out.println("‚±‚êˆÈãã“_‚ÍƒZƒbƒg‚Å‚«‚Ü‚¹‚ñ");
+				System.out.println("ã“ã‚Œä»¥ä¸Šå¼±ç‚¹ã¯ã‚»ãƒƒãƒˆã§ãã¾ã›ã‚“");
 			}
 			else{
 				weekATK[countATR] = K[i];
@@ -82,7 +82,7 @@ public class Status {
 	
 	public void setWeekATK(int K){
 		if(countATK>8){
-			System.out.println("‚±‚êˆÈãã“_‚ÍƒZƒbƒg‚Å‚«‚Ü‚¹‚ñ");
+			System.out.println("ã“ã‚Œä»¥ä¸Šå¼±ç‚¹ã¯ã‚»ãƒƒãƒˆã§ãã¾ã›ã‚“");
 		}
 		else{
 			weekATK[countATR] = K;
@@ -90,11 +90,11 @@ public class Status {
 		}
 	}
 
-	//WeekATR‚ÌƒZƒbƒ^[
+	//WeekATRã®ã‚»ãƒƒã‚¿ãƒ¼
 	public void setWeekATR(int[] R){
 		for(int i=0;i<R.length;i++){
 			if(countATR>8){
-				System.out.println("‚±‚êˆÈãã“_‚ÍƒZƒbƒg‚Å‚«‚Ü‚¹‚ñ");
+				System.out.println("ã“ã‚Œä»¥ä¸Šå¼±ç‚¹ã¯ã‚»ãƒƒãƒˆã§ãã¾ã›ã‚“");
 			}
 			else{
 				weekATK[countATR] = R[i];
@@ -106,7 +106,7 @@ public class Status {
 	public void setWeekATR(int R){
 		if(countATR>8){
 			
-			System.out.println("‚±‚êˆÈãã“_‚ÍƒZƒbƒg‚Å‚«‚Ü‚¹‚ñ");
+			System.out.println("ã“ã‚Œä»¥ä¸Šå¼±ç‚¹ã¯ã‚»ãƒƒãƒˆã§ãã¾ã›ã‚“");
 			
 		}
 		else{
@@ -118,7 +118,7 @@ public class Status {
 	public void setAttackATR(int[] atkatr){
 		for(int i=0;i<atkatr.length;i++){
 			if(countAtkAtr>8){
-				System.out.println("‚±‚êˆÈãUŒ‚‘®«‚ÍƒZƒbƒg‚Å‚«‚Ü‚¹‚ñ");
+				System.out.println("ã“ã‚Œä»¥ä¸Šæ”»æ’ƒå±æ€§ã¯ã‚»ãƒƒãƒˆã§ãã¾ã›ã‚“");
 			}
 			else{
 				attackATR[countAtkAtr] = atkatr[i];

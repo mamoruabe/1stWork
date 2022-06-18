@@ -28,24 +28,24 @@ public class SelectName {
 	
 	public SelectName(){
 	
-		//label‚Ætextfieldİ’è
-		st1 = "ƒvƒŒƒCƒ„[–¼‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B";
+		//labelã¨textfieldè¨­å®š
+		st1 = "ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼åã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ã€‚";
 		lb1 = new Label(st1);
 		lb1.setFont(new Font(30));
 		lb1.setLayoutX(10);
 		lb1.setLayoutY(100);
 		
 		
-		st2 = "Œˆ‚Ü‚Á‚½‚çENTERƒL[‚ğ‰Ÿ‚µ‚Ä‚Ë";
+		st2 = "æ±ºã¾ã£ãŸã‚‰ENTERã‚­ãƒ¼ã‚’æŠ¼ã—ã¦ã­";
 		lb2 = new Label(st2);
 		lb2.setFont(new Font(30));
 		lb2.setLayoutX(10);
 		lb2.setLayoutY(220);
 		
-		tf1 = new TextField("ƒvƒŒƒCƒ„[1");
+		tf1 = new TextField("ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼1");
 		
 		
-		//ƒvƒŒƒCƒ„[ƒl[ƒ€“ü—Í—“ƒŒƒCƒAƒEƒg
+		//ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ãƒãƒ¼ãƒ å…¥åŠ›æ¬„ãƒ¬ã‚¤ã‚¢ã‚¦ãƒˆ
 		tf1.setFont(new Font(30));
 		tf1.setLayoutX(10);
 		tf1.setLayoutY(150);
@@ -80,7 +80,7 @@ public class SelectName {
 		//play();
 	}
 */	
-	//checkwin‚ÌOK‚ğ‰Ÿ‚·‚ÆƒV[ƒ“„ˆÚ
+	//checkwinã®OKã‚’æŠ¼ã™ã¨ã‚·ãƒ¼ãƒ³æ¨ç§»
 /*	public void play(){
 	
 		boolean check = true;
@@ -107,7 +107,7 @@ public class SelectName {
 
 class CheckWin extends Stage{
 
-	//ƒtƒB[ƒ‹ƒh
+	//ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰
 	VBox vb1 ;
 	Label lb1 ;
 	Label lb2 ;
@@ -121,21 +121,21 @@ class CheckWin extends Stage{
 		ke = new ThisKeyEvent();
 		st1 = str;
 	
-		setTitle("Šm”F");
+		setTitle("ç¢ºèª");
 		initOwner(wnd);
 		setWidth(700);
 		setHeight(400);
 
-		lb1 = new Label(st1+"‚Å‚æ‚ë‚µ‚¢‚Å‚·‚©H");
+		lb1 = new Label(st1+"ã§ã‚ˆã‚ã—ã„ã§ã™ã‹ï¼Ÿ");
 
-		lb2 = new Label("OK‚È‚çENTERA");
-		lb3 = new Label("•Ï‚¦‚é‚È‚çSPACE‚ğ‰Ÿ‚µ‚Ä‚­‚¾‚³‚¢B");
+		lb2 = new Label("OKãªã‚‰ENTERã€");
+		lb3 = new Label("å¤‰ãˆã‚‹ãªã‚‰SPACEã‚’æŠ¼ã—ã¦ãã ã•ã„ã€‚");
 		
 		lb1.setFont(new Font(30));
 		lb2.setFont(new Font(30));
 		lb3.setFont(new Font(30));
 		
-		//VBox‚Ìİ’è
+		//VBoxã®è¨­å®š
 		vb1 = new VBox();
 		
 		vb1.getChildren().addAll(lb1,lb2,lb3);

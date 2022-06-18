@@ -19,12 +19,12 @@ public class GameMain extends Application{
 	
 	public void start(Stage stage)throws Exception{
 		
-		stage.setTitle("’¸ã‚ğ–Úw‚¹II");
+		stage.setTitle("é ‚ä¸Šã‚’ç›®æŒ‡ã›ï¼ï¼");
 		stage.setWidth(768);
 		stage.setHeight(576);
 		
 		
-		//ƒtƒB[ƒ‹ƒh
+		//ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰
 		Player plr = new Player();
 		MonsterList msl = new MonsterList();
 		StartScene ss = new StartScene();
@@ -40,15 +40,15 @@ public class GameMain extends Application{
 		mslist.addList(floor1);
 		
 		
-		//ƒ_ƒ~[scene
+		//ãƒ€ãƒŸãƒ¼scene
 		String kl = plr.name;
 		Label dlb = new Label(kl);
 		VBox dammyvb = new VBox(dlb);
 		Scene Dammy = new Scene(dammyvb);
 		//stage.setScene(scene);
 		
-		//ƒV[ƒ“‚²‚Æ‚ÉkeyEvent‚ğİ’è
-		//keyevent‚Í•Ê‚ÌƒNƒ‰ƒX‚Æ‚µ‚ÄÀ‘•
+		//ã‚·ãƒ¼ãƒ³ã”ã¨ã«keyEventã‚’è¨­å®š
+		//keyeventã¯åˆ¥ã®ã‚¯ãƒ©ã‚¹ã¨ã—ã¦å®Ÿè£…
 		ke = new ThisKeyEvent();
 		
 		ss.getScene().setOnKeyPressed(event ->
@@ -73,10 +73,10 @@ public class GameMain extends Application{
 }
 
 
-//KeyEvent‚ª‚±‚¿‚ç
+//KeyEventãŒã“ã¡ã‚‰
 class ThisKeyEvent{
 
-	//ƒtƒB[ƒ‹ƒh
+	//ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰
 	String s = null;
 	boolean b1 = false;
 	boolean b2 = true;
@@ -86,7 +86,7 @@ class ThisKeyEvent{
 	MonsterList msl = new MonsterList();
 	WeaponList wpl = new WeaponList();
 
-	//ƒXƒ^[ƒg‰æ–Ê‚ÌƒL[ƒCƒxƒ“ƒg
+	//ã‚¹ã‚¿ãƒ¼ãƒˆç”»é¢ã®ã‚­ãƒ¼ã‚¤ãƒ™ãƒ³ãƒˆ
 	public void GameStart(KeyEvent e,SelectName sn,Stage stage){
 	
 		s = e.getCode().toString();
@@ -99,7 +99,7 @@ class ThisKeyEvent{
 		}
 	}
 	
-	//ƒvƒŒƒCƒ„[–¼“ü—Í‰æ–Ê‚ÌƒL[ƒCƒxƒ“ƒg
+	//ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼åå…¥åŠ›ç”»é¢ã®ã‚­ãƒ¼ã‚¤ãƒ™ãƒ³ãƒˆ
 	public void SelectName(KeyEvent e,Player plr,String str,Window wnd,Stage stage,Floor1 floor1){
 	
 		s = e.getCode().toString();
@@ -116,7 +116,7 @@ class ThisKeyEvent{
 		}
 	}
 	
-	//Šm”F‰æ–Ê‚ÌƒL[ƒCƒxƒ“ƒg
+	//ç¢ºèªç”»é¢ã®ã‚­ãƒ¼ã‚¤ãƒ™ãƒ³ãƒˆ
 	public void CheckWin(KeyEvent e,Player plr,Stage stage,Floor1 floor1,CheckWin cw){
 	
 		s = e.getCode().toString();
@@ -138,7 +138,7 @@ class ThisKeyEvent{
 	
 	}
 	
-	//ƒ_ƒ“ƒWƒ‡ƒ“‚PŠK‰æ–Ê‚ÌƒL[ƒCƒxƒ“ƒg
+	//ãƒ€ãƒ³ã‚¸ãƒ§ãƒ³ï¼‘éšç”»é¢ã®ã‚­ãƒ¼ã‚¤ãƒ™ãƒ³ãƒˆ
 	public void Floor1Key(KeyEvent e,Polygon choice,Floor1 floor1,Stage stage,BattleScene bs,Window wnd){
 		double point = choice.getLayoutY();
 		int FloorPoint = 0;
@@ -183,14 +183,14 @@ class ThisKeyEvent{
 	}
 	
 
-	//ƒ_ƒ“ƒWƒ‡ƒ“ƒ}ƒbƒv‚Å‘˜‹öƒCƒxƒ“ƒg
+	//ãƒ€ãƒ³ã‚¸ãƒ§ãƒ³ãƒãƒƒãƒ—ã§é­é‡ã‚¤ãƒ™ãƒ³ãƒˆ
 	public void checkEvent(int fp,Stage stage,BattleScene bs,MainSceneFlame msf,Window wnd){
 	
 		if(fp==1){
 			
 			bs.setPlr(msf.getPLR());
 			bs.setMonster(msl.getMonster());
-			bs.addAni(msf.getPLR().getName()+"‚Í"+bs.getMonster().getName()+"‚É‘˜‹ö‚µ‚½B",0);
+			bs.addAni(msf.getPLR().getName()+"ã¯"+bs.getMonster().getName()+"ã«é­é‡ã—ãŸã€‚",0);
 			stage.setScene(bs.getScene());
 			bs.AniPlay(3);
 			bs.setMs(msf);
@@ -207,8 +207,8 @@ class ThisKeyEvent{
 	
 	}
 
-	//gameEnd1‚ÌƒL[ƒCƒxƒ“ƒg
-	//‚ ‚«‚ç‚ß‚Ä‹A‚éƒGƒ“ƒh
+	//gameEnd1ã®ã‚­ãƒ¼ã‚¤ãƒ™ãƒ³ãƒˆ
+	//ã‚ãã‚‰ã‚ã¦å¸°ã‚‹ã‚¨ãƒ³ãƒ‰
 	public void GameEnd1(KeyEvent e,MainSceneFlame ms,GameEnd1 ge1){
 	
 		String s = e.getCode().toString();
@@ -230,7 +230,7 @@ class ThisKeyEvent{
 	
 	
 
-	//ƒoƒgƒ‹‰æ–Ê‚ÌƒL[ƒCƒxƒ“ƒg
+	//ãƒãƒˆãƒ«ç”»é¢ã®ã‚­ãƒ¼ã‚¤ãƒ™ãƒ³ãƒˆ
 	public void BattleScene(KeyEvent e,Polygon choice,Stage stage,BattleScene bs){
 		double point = choice.getLayoutY();
 		int FloorPoint = 0;
@@ -262,7 +262,7 @@ class ThisKeyEvent{
 					int escape = (int)(n*100);
 					if(escape>50){
 						
-						String log1 = bs.getPLR().getName()+"‚Í“¦‚°o‚µ‚½II\n–³–“¦‚°Ø‚é‚±‚Æ‚É¬Œ÷‚µ‚½I";
+						String log1 = bs.getPLR().getName()+"ã¯é€ƒã’å‡ºã—ãŸï¼ï¼\nç„¡äº‹é€ƒã’åˆ‡ã‚‹ã“ã¨ã«æˆåŠŸã—ãŸï¼";
 						stage.setScene(bs.getMs().getScene());
 						bs.addAni(log1,0);
 						
@@ -271,11 +271,11 @@ class ThisKeyEvent{
 					}
 					else{
 					
-					String log1 = bs.getPLR().getName()+"‚Í“¦‚°o‚µ‚½II";
-					String log2 = "‚µ‚©‚µA‰ñ‚è‚Ü‚ê‚Ä‚µ‚Ü‚Á‚½II";
+					String log1 = bs.getPLR().getName()+"ã¯é€ƒã’å‡ºã—ãŸï¼ï¼";
+					String log2 = "ã—ã‹ã—ã€å›ã‚Šè¾¼ã¾ã‚Œã¦ã—ã¾ã£ãŸï¼ï¼";
 					bs.addAni(log1,0);
 					bs.addAni(log2,1);
-					System.out.println("u“¦‚°‚év¸”s");
+					System.out.println("ã€Œé€ƒã’ã‚‹ã€å¤±æ•—");
 					
 					}
 					bs.AniPlay(2);
@@ -283,7 +283,7 @@ class ThisKeyEvent{
 										
 			}
 		
-		//‚±‚±‚©‚ç“Gƒ‚ƒ“ƒXƒ^[‚ÌUŒ‚
+		//ã“ã“ã‹ã‚‰æ•µãƒ¢ãƒ³ã‚¹ã‚¿ãƒ¼ã®æ”»æ’ƒ
 		bs.MonsterAttack();
 		bs.AniPlay(0);
 		}
@@ -292,7 +292,7 @@ class ThisKeyEvent{
 		
 	}
 
-	//‘I‘ğˆ‚ÌOŠpƒ}[ƒNˆÚ“®ƒƒ\ƒbƒh
+	//é¸æŠè‚¢ã®ä¸‰è§’ãƒãƒ¼ã‚¯ç§»å‹•ãƒ¡ã‚½ãƒƒãƒ‰
 	public void ChengeChoice(Polygon choice,String s,double point){
 		if(s.equals("DOWN")) {
 		

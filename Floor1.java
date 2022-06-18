@@ -22,48 +22,48 @@ public class Floor1 extends MainSceneFlame{
 		eventString.setLayoutX(165);
 		eventString.setLayoutY(375);
 		
-		st1[0] = "i‚Ş";
-		st1[1] = "–ß‚é";
-		st1[2] = "’²‚×‚é";
-		st1[3] = "‚¿•¨";
+		st1[0] = "é€²ã‚€";
+		st1[1] = "æˆ»ã‚‹";
+		st1[2] = "èª¿ã¹ã‚‹";
+		st1[3] = "æŒã¡ç‰©";
 		setSelect(sl,st1);
-		setFloor("1ŠK‘w");
+		setFloor("1éšå±¤");
 	
 	}
 	
 	
-	//ƒRƒ}ƒ“ƒh‘I‘ğŒã‚Ìƒƒ\ƒbƒh
+	//ã‚³ãƒãƒ³ãƒ‰é¸æŠå¾Œã®ãƒ¡ã‚½ãƒƒãƒ‰
 	
-	//ƒvƒŒƒCƒ„[ƒtƒHƒ[ƒh
-	//i‚Ş
+	//ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ãƒ•ã‚©ãƒ¯ãƒ¼ãƒ‰
+	//é€²ã‚€
 	public void PLFW(){
 	
 	
-		est = plr.getName()+"‚Í‘Oi‚µ‚½B";	
+		est = plr.getName()+"ã¯å‰é€²ã—ãŸã€‚";	
 		point++;
 		this.addAni(est,0);
 		//AniPlay(3);
 	
 	}
 	
-	//ƒvƒŒƒCƒ„[ƒoƒbƒNƒ[ƒh
-	//–ß‚é
+	//ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ãƒãƒƒã‚¯ãƒ¯ãƒ¼ãƒ‰
+	//æˆ»ã‚‹
 	public void PLBW(){
 	
-		est = plr.getName()+"‚ÍŒã‘Ş‚µ‚½B";
+		est = plr.getName()+"ã¯å¾Œé€€ã—ãŸã€‚";
 		point--;
 		this.addAni(est,0);
 		AniPlay(3);
 	
 	}
-	//ƒvƒŒƒCƒ„[ƒT[ƒ`
-	//’²‚×‚éƒRƒ}ƒ“ƒh
+	//ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ã‚µãƒ¼ãƒ
+	//èª¿ã¹ã‚‹ã‚³ãƒãƒ³ãƒ‰
 	public void PLSR(){
 	
 		if(point==0){
 		
 			setImage("msbg3.png");
-			est = "“ü‚èŒû‚É—§‚Á‚Ä‚¢‚Ü‚·B";
+			est = "å…¥ã‚Šå£ã«ç«‹ã£ã¦ã„ã¾ã™ã€‚";
 			this.addAni(est,0);
 			AniPlay(3);
 		
@@ -71,8 +71,8 @@ public class Floor1 extends MainSceneFlame{
 	
 	}
 	
-	//ƒ`ƒFƒbƒNƒoƒbƒO
-	//‚¿•¨
+	//ãƒã‚§ãƒƒã‚¯ãƒãƒƒã‚°
+	//æŒã¡ç‰©
 	public void CHBG(){
 	
 		

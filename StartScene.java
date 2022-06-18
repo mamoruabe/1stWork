@@ -11,11 +11,11 @@ import javafx.scene.control.*;
 import javafx.scene.text.*;
 import java.nio.file.Paths;
 
-//ƒXƒ^[ƒg‰æ–Ê‚ÌƒNƒ‰ƒX
+//ã‚¹ã‚¿ãƒ¼ãƒˆç”»é¢ã®ã‚¯ãƒ©ã‚¹
 
 public class StartScene {
 
-	//ƒtƒB[ƒ‹ƒh
+	//ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰
 	String st1;
 	Label gs1; 
 	String st2;
@@ -35,7 +35,7 @@ public class StartScene {
 		}
 		
 		catch(ArrayIndexOutOfBoundsException e){
-		  System.out.println("“Ç‚İ‚İ¸”s");
+		  System.out.println("èª­ã¿è¾¼ã¿å¤±æ•—");
 		}
 		
 		

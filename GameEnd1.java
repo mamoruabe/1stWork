@@ -6,7 +6,7 @@ import javafx.scene.text.*;
 
 class GameEnd1 extends Stage{
 
-	//ƒtƒB[ƒ‹ƒh
+	//ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰
 	VBox vb1 ;
 	Label lb1 ;
 	Label lb2 ;
@@ -19,21 +19,21 @@ class GameEnd1 extends Stage{
 		ke = new ThisKeyEvent();
 		
 	
-		setTitle("Šm”F");
+		setTitle("ç¢ºèª");
 		initOwner(wnd);
 		setWidth(700);
 		setHeight(400);
 
-		lb1 = new Label("“ƒ‚©‚ç‚Å‚ÄAƒQ[ƒ€‚ğI—¹‚µ‚Ü‚·B");
+		lb1 = new Label("å¡”ã‹ã‚‰ã§ã¦ã€ã‚²ãƒ¼ãƒ ã‚’çµ‚äº†ã—ã¾ã™ã€‚");
 
-		lb2 = new Label("OK‚È‚çENTERA");
-		lb3 = new Label("‘±‚¯‚é‚È‚çSPACE‚ğ‰Ÿ‚µ‚Ä‚­‚¾‚³‚¢B");
+		lb2 = new Label("OKãªã‚‰ENTERã€");
+		lb3 = new Label("ç¶šã‘ã‚‹ãªã‚‰SPACEã‚’æŠ¼ã—ã¦ãã ã•ã„ã€‚");
 		
 		lb1.setFont(new Font(30));
 		lb2.setFont(new Font(30));
 		lb3.setFont(new Font(30));
 		
-		//VBox‚Ìİ’è
+		//VBoxã®è¨­å®š
 		vb1 = new VBox();
 		
 		vb1.getChildren().addAll(lb1,lb2,lb3);

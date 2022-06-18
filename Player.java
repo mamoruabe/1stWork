@@ -1,19 +1,19 @@
 public class Player{
 
-	String name;//ƒvƒŒƒCƒ„[ƒl[ƒ€
-	int HP;//‘Ì—Í
+	String name;//ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ãƒãƒ¼ãƒ 
+	int HP;//ä½“åŠ›
 	int MaxHP;
-	int MP;//–‚—Í
+	int MP;//é­”åŠ›
 	int MaxMP;
-	int ATK;//•¨—UŒ‚—Í
-	int MATK;//–‚–@UŒ‚—Í
-	int DEF;//•¨—–hŒä—Í
-	int MDEF;//–‚–@–hŒä—Í
-	int Lv;//ƒŒƒxƒ‹
-	int Ex;//ŒoŒ±’l
+	int ATK;//ç‰©ç†æ”»æ’ƒåŠ›
+	int MATK;//é­”æ³•æ”»æ’ƒåŠ›
+	int DEF;//ç‰©ç†é˜²å¾¡åŠ›
+	int MDEF;//é­”æ³•é˜²å¾¡åŠ›
+	int Lv;//ãƒ¬ãƒ™ãƒ«
+	int Ex;//çµŒé¨“å€¤
 	Weapon wp;
 	
-	//ƒRƒ“ƒXƒgƒ‰ƒNƒ^
+	//ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿
 	public Player(){
 	
 		name = null;
@@ -31,7 +31,7 @@ public class Player{
 	
 	}
 	
-	//ƒZƒbƒ^[‚ÆƒQƒbƒ^[
+	//ã‚»ãƒƒã‚¿ãƒ¼ã¨ã‚²ãƒƒã‚¿ãƒ¼
 	public void setName(String NAME){name = NAME;}
 	
 	public String getName(){return name;}
@@ -54,7 +54,7 @@ public class Player{
 	
 	}
 
-	//LvUpŠÖ”—p‚ÌŠÖ”
+	//LvUpé–¢æ•°ç”¨ã®é–¢æ•°
 	public void addEx(){
 	
 		
@@ -76,7 +76,7 @@ public class Player{
 	
 	}
 	
-	//atk‚Ædamage
+	//atkã¨damage
 	public int[] attackWp(){
 	
 		int[] atr = wp.getWatr();

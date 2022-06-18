@@ -1,17 +1,17 @@
 public class Slaim extends Monster{
 
-	//ŒÅ—L‚ÌƒXƒe[ƒ^ƒXƒZƒbƒg
-	private int watk = 1;//•¨—,aŒ‚ã“_
-	private int[] watr = {10,14};//‰ŠA—‹ã“_
-	private int atkatr = 0;//•¨—‘ÅŒ‚UŒ‚A‘®«‚È‚µ
+	//å›ºæœ‰ã®ã‚¹ãƒ†ãƒ¼ã‚¿ã‚¹ã‚»ãƒƒãƒˆ
+	private int watk = 1;//ç‰©ç†,æ–¬æ’ƒå¼±ç‚¹
+	private int[] watr = {10,14};//ç‚ã€é›·å¼±ç‚¹
+	private int atkatr = 0;//ç‰©ç†æ‰“æ’ƒæ”»æ’ƒã€å±æ€§ãªã—
 	
-	//ŠeíƒXƒe[ƒ^ƒX
-	//HP,MP,ATK,MATK,DEF,MDEF‚Ì‡
+	//å„ç¨®ã‚¹ãƒ†ãƒ¼ã‚¿ã‚¹
+	//HP,MP,ATK,MATK,DEF,MDEFã®é †
 	private int[] SlaimSts ={8,0,4,0,0,2};
 	
 	Slaim(){
 	
-		super("ƒXƒ‰ƒCƒ€","slaim1.png");
+		super("ã‚¹ãƒ©ã‚¤ãƒ ","slaim1.png");
 
 		status.setStatus(SlaimSts);
 		status.setWeekATK(watk);
@@ -60,18 +60,18 @@ public class Slaim extends Monster{
 
 class Goburin extends Monster{
 
-	//ŒÅ—L‚ÌƒXƒe[ƒ^ƒXƒZƒbƒg
-	private int watk = 1;//•¨—,aŒ‚ã“_
-	private int[] watr = {10,14};//‰ŠA—‹ã“_
-	private int atkatr = 0;//•¨—‘ÅŒ‚UŒ‚A‘®«‚È‚µ
+	//å›ºæœ‰ã®ã‚¹ãƒ†ãƒ¼ã‚¿ã‚¹ã‚»ãƒƒãƒˆ
+	private int watk = 1;//ç‰©ç†,æ–¬æ’ƒå¼±ç‚¹
+	private int[] watr = {10,14};//ç‚ã€é›·å¼±ç‚¹
+	private int atkatr = 0;//ç‰©ç†æ‰“æ’ƒæ”»æ’ƒã€å±æ€§ãªã—
 	
-	//ŠeíƒXƒe[ƒ^ƒX
-	//HP,MP,ATK,MATK,DEF,MDEF‚Ì‡
+	//å„ç¨®ã‚¹ãƒ†ãƒ¼ã‚¿ã‚¹
+	//HP,MP,ATK,MATK,DEF,MDEFã®é †
 	private int[] SlaimSts ={12,0,3,0,0,3};
 	
 	Goburin(){
 	
-		super("ƒSƒuƒŠƒ“","slaim1.png");
+		super("ã‚´ãƒ–ãƒªãƒ³","slaim1.png");
 
 		status.setStatus(SlaimSts);
 		status.setWeekATK(watk);

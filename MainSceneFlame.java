@@ -68,35 +68,35 @@ public class MainSceneFlame{
 //		Slaim sm1 = new Slaim();
 //		sm1.setL((576/2)-(sm1.GSizeW/2),20);
 	
-		//‘I‘ğˆ‚Ì˜g
+		//é¸æŠè‚¢ã®æ 
 		Rectangle rect1 = new Rectangle(20, 370, 120, 150);
 		rect1.setStroke(Color.BLACK);
 		rect1.setArcWidth(20);
 		rect1.setArcHeight(20);
 		rect1.setFill(null);
 		
-		//ƒeƒLƒXƒg‚Ì—“
+		//ãƒ†ã‚­ã‚¹ãƒˆã®æ¬„
 		Rectangle rect2 = new Rectangle(160, 370, 560, 150);
 		rect2.setStroke(Color.BLACK);
 		rect2.setArcWidth(20);
 		rect2.setArcHeight(20);
 		rect2.setFill(null);
 		
-		//ƒvƒŒƒCƒ„[î•ñ—“
+		//ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼æƒ…å ±æ¬„
 		Rectangle rect3 = new Rectangle(20, 10, 120, 150);
 		rect3.setStroke(Color.BLACK);
 		rect3.setArcWidth(20);
 		rect3.setArcHeight(20);
 		rect3.setFill(null);
 		
-		//ŠK‘wî•ñ—“
+		//éšå±¤æƒ…å ±æ¬„
 		Rectangle rect4 = new Rectangle(160, 10, 560, 25);
 		rect4.setStroke(Color.BLACK);
 		rect4.setArcWidth(20);
 		rect4.setArcHeight(20);
 		rect4.setFill(null);
 		
-		//‘I‘ğ‚ÌOŠpƒ}[ƒN
+		//é¸æŠã®ä¸‰è§’ãƒãƒ¼ã‚¯
 		//Double []d = new Double[]{0.0, 0.0, 100.0, 0.0, 50.0, 70.0};
 		Double []d = new Double[]{0.0, 0.0, 0.0, 20.0, 14.0, 10.0};
 		choice = new Polygon();
@@ -109,7 +109,7 @@ public class MainSceneFlame{
 		plX = 30;
 		plY = 20;
 		
-		//ƒvƒŒƒCƒ„[‚Ìî•ñ
+		//ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ã®æƒ…å ±
 		for(int i=0;i<pl.length;i++){
 			pl[i] = new Label();
 			pl[i].setFont(new Font(20));
@@ -117,7 +117,7 @@ public class MainSceneFlame{
 			pl[i].setLayoutY(plY+(32*i));
 		}
 		
-		//ŠK‘wî•ñ
+		//éšå±¤æƒ…å ±
 		floor = new Label();
 		floor.setFont(new Font(20));
 		floor.setLayoutX(440);
@@ -139,7 +139,7 @@ public class MainSceneFlame{
 		
 	
 		
-		//‘I‘ğˆ˜g‚Ì•¶š
+		//é¸æŠè‚¢æ ã®æ–‡å­—
 		for(int i=0;i<sl.length;i++){
 		
 			sl[i] = new Label();
@@ -147,7 +147,7 @@ public class MainSceneFlame{
 			
 		}
 		
-		//”z’u‚ğ‚»‚ê‚¼‚ê‚ÌGroup•Ï”‚É‘ã“ü
+		//é…ç½®ã‚’ãã‚Œãã‚Œã®Groupå¤‰æ•°ã«ä»£å…¥
 		plGp = new Group();
 		plGp.getChildren().addAll(pl);
 		
@@ -197,7 +197,7 @@ public class MainSceneFlame{
 		}
 		
 		catch(ArrayIndexOutOfBoundsException e){
-		  System.out.println("“Ç‚İ‚İ¸”s");
+		  System.out.println("èª­ã¿è¾¼ã¿å¤±æ•—");
 		}
 
 		bimg = new BackgroundImage(img,null,null,null,null);
@@ -260,7 +260,7 @@ public class MainSceneFlame{
 }
 
 
-//animationÀ‘•ƒNƒ‰ƒX
+//animationå®Ÿè£…ã‚¯ãƒ©ã‚¹
 
 class ANI extends Transition{
 

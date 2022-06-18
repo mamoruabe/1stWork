@@ -14,7 +14,7 @@ public class Weapon {
 	
 	}
 	
-	//セッターとゲッター
+	//繧ｻ繝�繧ｿ繝ｼ縺ｨ繧ｲ繝�繧ｿ繝ｼ
 	public void setName(String st){name =st;}
 	
 	public String getName(){return name;}

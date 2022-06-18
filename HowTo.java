@@ -7,7 +7,7 @@ import javafx.scene.text.*;
 
 class HowTo extends Stage{
 
-	//�t�B�[���h
+	//フィールド
 	VBox vb1;
 	Label[] lb;
 	String[] st;
@@ -20,13 +20,13 @@ class HowTo extends Stage{
 		st = new String[5];
 		lb = new Label[5];
 		
-		st[0] = "�`��������`";
-		st[1] = "�㉺�L�[�őI������I�Ѥ";
-		st[2] = "SPACE�������ƌ��肵�܂��B";
-		st[3] = "�I������I�тȂ������Ƃ͂ł��܂���B";
-		st[4] = "����ɂ́A�����̃X�e�[�^�X���o�Ă��܂��B";
+		st[0] = "～操作説明～";
+		st[1] = "上下キーで選択肢を選び､";
+		st[2] = "SPACEを押すと決定します。";
+		st[3] = "選択肢を選びなおすことはできません。";
+		st[4] = "左上には、自分のステータスが出ています。";
 	
-		setTitle("�������");
+		setTitle("操作説明");
 		setWidth(700);
 		setHeight(300);
 

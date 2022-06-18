@@ -8,7 +8,7 @@ public class Wood extends Weapon{
 	
 		super();
 		
-		st1 = "�؂̖_";
+		st1 = "木の棒";
 		k = 1;
 		int[] N = {1,0};
 		n = N;
